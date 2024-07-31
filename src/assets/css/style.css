@@ -1,0 +1,311 @@
+/*MOBILE VERSION*/
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+/* COLORS*/
+
+:root{
+--first_color: hsl(158, 36%, 37%);
+--second_color: hsl(30, 38%, 92%);
+--third_color:hsl(212, 21%, 14%);
+--fourth_color:hsl(228, 12%, 48%);
+}
+
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(32, 37%, 92%, 0.637);
+}
+
+
+.main_container{
+
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 40rem;
+    max-width: 25rem;
+    transition: all 0.3s ease-in;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.div_1{
+    width: 100%;
+    height: 40%;    
+}
+
+
+.div_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.div_2{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.height{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.1rem, 4vw, 0.7rem);
+    letter-spacing: 5px;
+    color: var(--fourth_color);
+    text-transform: uppercase;  
+}
+
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: clamp(0.5rem, 8vw, 2.25rem);
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+
+}
+
+
+.description{
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 3.9vw, 1rem);
+    color:  hsl(228, 12%, 48%);
+    line-height: 135%;
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.big_size_price{
+    font-family: 'Fraunces', serif;
+    font-size: clamp(0.5rem, 8vw, 2.25rem);
+    color: var(--first_color);
+    font-weight: 700;
+    padding-right: 5%;
+}
+
+
+.small_size_price{
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 4vw, 0.8rem);
+    color: var(--fourth_color);
+    text-decoration: line-through;
+}
+
+
+button{
+    width: 100%;
+    height: 15%;
+    background-color: var(--first_color);
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 4.5vw, 0.8rem);
+    color: white;
+    font-weight: 700;
+}
+
+button img {
+    height: 33%;
+}
+
+
+
+.cart{
+    padding-right:3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION*/
+
+
+
+@media screen and (min-width: 64rem) {
+
+.main_container{
+    width: 45%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    max-width: 28rem;
+    max-height: 25rem;
+
+}
+
+
+.div_1{
+    width: 50%;
+    height: 100%;    
+}
+
+
+.div_1 img {
+    border-radius: 0 ;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.div_2{
+    width: 50%;
+    height: 100%;
+}
+
+
+.height{
+    width: 80%;
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.1rem, 1vw, 0.6rem);
+    letter-spacing: 3px;
+}
+
+
+h1{
+    font-size: clamp(0.5rem, 2.7vw, 1.7rem);
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    line-height: 90%;
+
+}
+
+
+.description{
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 1.1vw, 0.7rem);
+    color:  hsl(228, 12%, 48%);
+    line-height: 135%;
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.big_size_price{
+    font-family: 'Fraunces', serif;
+    font-size: clamp(0.5rem, 2.3vw, 1.4rem);
+    color: var(--first_color);
+    font-weight: 700;
+    padding-right: 5%;
+}
+
+
+.small_size_price{
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 1.1vw, 0.75rem);
+    color: var(--fourth_color);
+    text-decoration: line-through;
+}
+
+
+button{
+    width: 100%;
+    height: 12%;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Montserrat', serif;
+    font-size: clamp(0.1rem, 1vw, 0.6rem);
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+
+    background-color: rgb(22, 78, 22);
+    cursor: pointer;
+
+}
+
+button img {
+    height: 35%;
+}
+
+
+.cart{
+    padding-right:5%;
+}
+
+
+
+}
+
+
+
+
